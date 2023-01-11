@@ -23,8 +23,8 @@ Quais os passos para realizar a configuração?
 2. Após isso, executar o request Create-Core para criar os dados no core.
 3. Executar o request Change-Schema que modificará os tipos dos objetos alocados no core do solr.
 4. Nessa etapa, um reload no core terá que ser realizado, pois as configurações executadas no request acima precisam ser aplicadas.
-  * Acessar a url local disponibilizada: [url-solr-local](http://localhost:8983/solr/)
-  * ![image](https://user-images.githubusercontent.com/73493014/211834898-f9135155-6d9b-4d9b-8bfd-cf101b72faf0.png)
+  4.1 Acessar a url local disponibilizada: [url-solr-local](http://localhost:8983/solr/)
+  4.2 ![image](https://user-images.githubusercontent.com/73493014/211834898-f9135155-6d9b-4d9b-8bfd-cf101b72faf0.png)
 5. Após o reload ter sido realizado os requests de configuração já foram finalizados e a busca está pronta para ser utilizada.
 
 
