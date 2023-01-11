@@ -4,7 +4,7 @@ parecida ao máximo com a do Mercado livre em seus aspectos funcionais.
 
 Obs: O projeto contém apis de configuração que devem ser executadas antes de realizar operação de busca. 
 
-Os requests contendo os itens a serem adicionados e configurados na base de dados estão alocados no arquivo: [requests](https://github.com/EdsonPrates-des/solr-search-engine/blob/master/Requests.json)
+Os requests contendo os itens a serem adicionados e configurados na base de dados estão alocados no arquivo: [a relative link](Requests.json)
 
 Quais os requests de configuração?
 * Create-Core (cria sua base de dados)
