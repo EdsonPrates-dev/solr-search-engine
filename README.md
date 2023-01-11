@@ -4,7 +4,7 @@ parecida ao máximo com a do Mercado livre em seus aspectos funcionais.
 
 Obs: O projeto contém apis de configuração que devem ser executadas antes de realizar operação de busca. 
 
-Os requests contendo os itens a serem adicionados e configurados na base de dados estão alocados no arquivo: <a href="Request.json" download>Click to Download</a>
+Os requests contendo os itens a serem adicionados e configurados na base de dados estão alocados no arquivo: <a href="Requests.json" download>Click to Download</a>
 
 Quais os requests de configuração?
 * Create-Core (cria sua base de dados)
