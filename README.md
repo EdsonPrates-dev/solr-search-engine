@@ -17,7 +17,7 @@ A collection contendo os requests dos itens a serem adicionados e configurados n
 * Base-Search (faz um get e traz todos os itens alocados na base)
 * Search-By-Type (ele busca o item especifico que deseja trazer pelo seu tipo)
 
-##Quais os passos para realizar a configuração?
+## Quais os passos para realizar a configuração?
 
 1. Entrar na pasta onde está alocado o arquivo docker-compose.yaml e executar o seguinte comando para subir a imagem do solr local:
   - docker compose up -d
