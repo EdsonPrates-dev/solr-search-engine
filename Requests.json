@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "d2a8dc84-8048-4ed0-8dde-07ef460efe86",
+		"name": "SolrSearch",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18092117"
+	},
+	"item": [
+		{
+			"name": "Change-Schema",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"namesField\": [\r\n            \"State\",\r\n            \"City\",\r\n            \"Model\",\r\n            \"Brand\",\r\n            \"Version\",\r\n            \"Condition\",\r\n            \"Color\",\r\n            \"Image\",\r\n            \"Year\"\r\n        ],\r\n        \"type\": \"text_general\"\r\n    },\r\n    {\r\n        \"namesField\": [\r\n            \"CarId\",\r\n            \"ModelId\",\r\n            \"BrandId\",\r\n            \"VersionId\",\r\n            \"YearId\",\r\n            \"ColorId\"\r\n        ],\r\n        \"type\": \"plongs\"\r\n    },\r\n    {\r\n        \"namesField\": [\r\n            \"Km\",\r\n            \"PriceFor\"\r\n        ],\r\n        \"type\": \"pdoubles\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44322/structureOperations/changeSchema",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44322",
+					"path": [
+						"structureOperations",
+						"changeSchema"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete-Fields",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44322/structureOperations/deleteFields",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44322",
+					"path": [
+						"structureOperations",
+						"deleteFields"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create-Core",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"CarId\": \"1\",\n        \"State\": \"São_Paulo\",\n        \"City\": \"Santo_André\",\n        \"Model\": \"Uno\",\n        \"ModelId\": \"1\",\n        \"Brand\": \"Fiat\",\n        \"BrandId\": \"1\",\n        \"Version\": \"Fire_1.0\",\n        \"VersionId\": \"1\",\n        \"Condition\": \"Used\",\n        \"PriceFor\": 20.100,\n        \"Km\": 80.000,\n        \"Year\": \"2011\",\n        \"YearId\": \"1\",\n        \"Color\": \"Vermelho\",\n        \"ColorId\": \"1\",\n        \"Image\": \"https://img2.icarros.com/dbimg/imgmodelo/4/269_4.jpg\"\n    },\n    {\n        \"CarId\": \"2\",\n        \"State\": \"Minas_Gerais\",\n        \"City\": \"Belo_Horizonte\",\n        \"Model\": \"Palio\",\n        \"ModelId\": \"2\",\n        \"Brand\": \"Fiat\",\n        \"BrandId\": \"2\",\n        \"Version\": \"Fire_1.0\",\n        \"VersionId\": \"2\",\n        \"Condition\": \"Used\",\n        \"PriceFor\": 18.200,\n        \"Km\": 248.000,\n        \"Year\": \"2009\",\n        \"YearId\": \"2\",\n        \"Color\": \"Prata\",\n        \"ColorId\": \"2\",\n        \"Image\": \"https://3.bp.blogspot.com/-2-HOM_lKNOM/VYhYyqKZe3I/AAAAAAACJwQ/gyFXu4i6y2o/s640/Fiat-Palio-Fire-2016%2B%25282%2529.jpg\"\n    },\n    {\n        \"CarId\": \"3\",\n        \"State\": \"São_Paulo\",\n        \"City\": \"Americana\",\n        \"Model\": \"Strada\",\n        \"ModelId\": \"3\",\n        \"Brand\": \"Fiat\",\n        \"BrandId\": \"3\",\n        \"Version\": \"Cabine_Plus_1.4_MT\",\n        \"VersionId\": \"3\",\n        \"Condition\": \"New\",\n        \"PriceFor\": 84.000,\n        \"Km\": 0,\n        \"Year\": \"2015\",\n        \"YearId\": \"3\",\n        \"Color\": \"Branco\",\n        \"ColorId\": \"3\",\n        \"Image\": \"https://images.noticiasautomotivas.com.br/img/f/fiat-strada-adventure-2014-2.jpeg\"\n    },\n    {\n        \"CarId\": \"4\",\n        \"State\": \"Santa_Catarina\",\n        \"City\": \"Blumenau\",\n        \"Model\": \"Gol\",\n        \"ModelId\": \"4\",\n        \"Brand\": \"Volkswagen\",\n        \"BrandId\": \"4\",\n        \"Version\": \"Power_1.6\",\n        \"VersionId\": \"4\",\n        \"Condition\": \"Used\",\n        \"PriceFor\": 27.000,\n        \"Km\": 56.010,\n        \"Year\": \"2016\",\n        \"YearId\": \"4\",\n        \"Color\": \"Chumbo\",\n        \"ColorId\": \"4\",\n        \"Image\": \"https://cdn.carsp.com.br/upload/imgcache/dda9e3f0fe411155581b3527e28da089.jpeg\"\n    },\n    {\n        \"CarId\": \"5\",\n        \"State\": \"Bahia\",\n        \"City\": \"Salvador\",\n        \"Model\": \"Golf\",\n        \"ModelId\": \"5\",\n        \"Brand\": \"Volkswagen\",\n        \"BrandId\": \"4\",\n        \"Version\": \"GTI_2.0\",\n        \"VersionId\": \"5\",\n        \"Condition\": \"Used\",\n        \"PriceFor\": 52.500,\n        \"Km\": 120.000,\n        \"Year\": \"2019\",\n        \"YearId\": \"5\",\n        \"Color\": \"Azul\",\n        \"ColorId\": \"5\",\n        \"Image\": \"https://quatrorodas.abril.com.br/wp-content/uploads/2019/11/golf-gte-4-e1576088143565.jpg?quality=70&strip=info&w=1024\"\n    },\n    {\n        \"CarId\": \"6\",\n        \"State\": \"Rio_Grande_do_Sul\",\n        \"City\": \"Porto_Alegre\",\n        \"Model\": \"Fox\",\n        \"ModelId\": \"6\",\n        \"Brand\": \"Volkswagen\",\n        \"BrandId\": \"6\",\n        \"Version\": \"Trend_1.6\",\n        \"VersionId\": \"6\",\n        \"Condition\": \"Used\",\n        \"PriceFor\": 22.000,\n        \"Km\": 56.000,\n        \"Year\": \"2011\",\n        \"YearId\": \"1\",\n        \"Color\": \"Vermelho\",\n        \"ColorId\": \"6\",\n        \"Image\": \"https://cdn.motor1.com/images/mgl/m8Nm4/s3/vw-lanca-fox-2017-com-mais-itens-e-novidades-no-acabamento-veja-precos.jpg\"\n    },\n    {\n        \"CarId\": \"7\",\n        \"State\": \"Ceará\",\n        \"City\": \"Fortaleza\",\n        \"Model\": \"Uno\",\n        \"ModelId\": \"7\",\n        \"Brand\": \"Fiat\",\n        \"BrandId\": \"1\",\n        \"Version\": \"Vivace_1.0\",\n        \"VersionId\": \"7\",\n        \"Condition\": \"Used\",\n        \"PriceFor\": 23.450,\n        \"Km\": 70.000,\n        \"Year\": \"2019\",\n        \"YearId\": \"7\",\n        \"Color\": \"Azul\",\n        \"ColorId\": \"7\",\n        \"Image\": \"https://img0.icarros.com/dbimg/galeriaimgmodelo/2/24943_1.webp\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44322/structureOperations/createCore",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44322",
+					"path": [
+						"structureOperations",
+						"createCore"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Base-Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44322/solr/baseSearch",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44322",
+					"path": [
+						"solr",
+						"baseSearch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search-ByType",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44322/solr/searchByType/1/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44322",
+					"path": [
+						"solr",
+						"searchByType",
+						"1",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reload core",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44322/structureOperations/reload",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44322",
+					"path": [
+						"structureOperations",
+						"reload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
