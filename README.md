@@ -1,6 +1,6 @@
-O projeto consiste na configuração e utilização do solr como banco de dados NoSql para busca de itens, podendo ser qualquer produto alocado em seu core de dados.
+**O projeto consiste na configuração e utilização do solr como banco de dados NoSql para busca de itens, podendo ser qualquer produto alocado em seu core de dados.
 No exemplo da aplicação atual, utiliza-se carros como itens de busca, contendo suas caracteristicas e especificações. A ideia central era realizar uma busca de dados
-parecida ao máximo com a do Mercado livre em seus aspectos funcionais.
+parecida ao máximo com a do Mercado livre em seus aspectos funcionais.**
 
 ## Tecnologias e conceitos utilizados:
 
@@ -20,13 +20,13 @@ A collection contendo os requests dos itens a serem adicionados e configurados n
 ## Quais os passos para realizar a configuração?
 
 1. Entrar na pasta onde está alocado o arquivo docker-compose.yaml e executar o seguinte comando para subir a imagem do solr local:
-  - docker compose up -d
+  **- docker compose up -d**
 
 2. Após isso, executar o request Create-Core para criar os dados no core.
 3. Executar o request Change-Schema que modificará os tipos dos objetos alocados no core do solr.
 4. Nessa etapa, um reload no core terá que ser realizado, pois as configurações executadas no request acima precisam ser aplicadas.
-  - Acessar a url local disponibilizada: [url-solr-local](http://localhost:8983/solr/)
-  - Realizar o reload do core em: ![image](https://user-images.githubusercontent.com/73493014/211834898-f9135155-6d9b-4d9b-8bfd-cf101b72faf0.png)
+  **- Acessar a url local disponibilizada:** [url-solr-local](http://localhost:8983/solr/)
+  **- Realizar o reload do core em:** ![image](https://user-images.githubusercontent.com/73493014/211834898-f9135155-6d9b-4d9b-8bfd-cf101b72faf0.png)
 5. Após o reload ter sido realizado os requests de configuração já finalizadas, a busca está pronta para ser utilizada.
 
 
