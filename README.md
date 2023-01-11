@@ -4,10 +4,10 @@ parecida ao máximo com a do Mercado livre em seus aspectos funcionais.**
 
 ## Tecnologias e conceitos utilizados:
 
-* solr engine
-* .net core 3.1
-* web apis
-* docker-compose :whale:
+ * solr engine
+ * .net core 3.1
+ * web apis
+ * docker-compose :whale:
 
 **Obs:** *O projeto contém apis de configuração que devem ser executadas antes de realizar operação de busca.* 
 
