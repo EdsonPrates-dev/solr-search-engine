@@ -4,6 +4,11 @@ parecida ao máximo com a do Mercado livre em seus aspectos funcionais.**
 
 ## Tecnologias e conceitos utilizados:
 
+* solr engine
+* .net core 3.1
+* web apis
+* docker-compose :whale:
+
 **Obs:** *O projeto contém apis de configuração que devem ser executadas antes de realizar operação de busca.* 
 
 A collection contendo os requests dos itens a serem adicionados e configurados na base de dados estão alocados no arquivo: <a target="_blank" href="Requests.json" download="Requests.json">Request.json</a>
