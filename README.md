@@ -1,4 +1,4 @@
-#0d1117 **O projeto consiste na configuração e utilização do solr como banco de dados NoSql para busca de itens, podendo ser qualquer produto alocado em seu core de dados.
+**O projeto consiste na configuração e utilização do solr como banco de dados NoSql para busca de itens, podendo ser qualquer produto alocado em seu core de dados.
 No exemplo da aplicação atual, utiliza-se carros como itens de busca, contendo suas caracteristicas e especificações. A ideia central era realizar uma busca de dados
 parecida ao máximo com a do Mercado livre em seus aspectos funcionais.**
 
@@ -10,7 +10,7 @@ A collection contendo os requests dos itens a serem adicionados e configurados n
 
 ## Quais os requests de configuração?
 * Create-Core (cria sua base de dados)
-* Change-Schema (modifica os tipos dos objetos criados no solr-schema) !!REQUERIDO!!
+* Change-Schema (modifica os tipos dos objetos criados no solr-schema) REQUERIDO! :warning:
 * Delete-Fields (deleta os campos do core caso necessário. obs: não deleta o core, somente o json alocado.)
 
 ## Quais os requests de busca?
@@ -30,7 +30,7 @@ A collection contendo os requests dos itens a serem adicionados e configurados n
   **- Acessar a url local disponibilizada:** [url-solr-local](http://localhost:8983/solr/)
   **- Realizar o reload do core em:** ![image](https://user-images.githubusercontent.com/73493014/211834898-f9135155-6d9b-4d9b-8bfd-cf101b72faf0.png)
   
-5. Após o reload ter sido realizado os requests de configuração já finalizadas, a busca está pronta para ser utilizada.
+5. Após o reload ter sido realizado os requests de configuração já finalizadas, a busca está pronta para ser utilizada. :unlock:
 
 
 
