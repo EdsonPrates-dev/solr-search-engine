@@ -2,18 +2,18 @@ O projeto consiste na configuração e utilização do solr como banco de dados 
 No exemplo da aplicação atual, utiliza-se carros como itens de busca, contendo suas caracteristicas e especificações. A ideia central era realizar uma busca de dados
 parecida ao máximo com a do Mercado livre em seus aspectos funcionais.
 
-##Tecnologias e conceitos utilizados:
+## Tecnologias e conceitos utilizados:
 
 Obs: O projeto contém apis de configuração que devem ser executadas antes de realizar operação de busca. 
 
 A collection contendo os requests dos itens a serem adicionados e configurados na base de dados estão alocados no arquivo: <a target="_blank" href="Requests.json" download="Requests.json">Request.json</a>
 
-##Quais os requests de configuração?
+## Quais os requests de configuração?
 * Create-Core (cria sua base de dados)
 * Change-Schema (modifica os tipos dos objetos criados no solr-schema) !!REQUERIDO!!
 * Delete-Fields (deleta os campos do core caso necessário. obs: não deleta o core, somente o json alocado.)
 
-##Quais os requests de busca?
+## Quais os requests de busca?
 * Base-Search (faz um get e traz todos os itens alocados na base)
 * Search-By-Type (ele busca o item especifico que deseja trazer pelo seu tipo)
 
