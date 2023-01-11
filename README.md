@@ -27,7 +27,7 @@ Quais os passos para realizar a configuração?
 4. Nessa etapa, um reload no core terá que ser realizado, pois as configurações executadas no request acima precisam ser aplicadas.
   - Acessar a url local disponibilizada: [url-solr-local](http://localhost:8983/solr/)
   - Realizar o reload do core em: ![image](https://user-images.githubusercontent.com/73493014/211834898-f9135155-6d9b-4d9b-8bfd-cf101b72faf0.png)
-5. Após o reload ter sido realizado os requests de configuração já foram finalizados e a busca está pronta para ser utilizada.
+5. Após o reload ter sido realizado os requests de configuração já finalizadas, a busca está pronta para ser utilizada.
 
 
 
